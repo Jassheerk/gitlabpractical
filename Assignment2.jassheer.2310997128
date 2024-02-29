@@ -1,0 +1,48 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+
+using namespace std;
+
+class GuessTheNumber{
+private:
+    int ComputerGeneratedNumber;
+    int userGuessedNumber;
+    int attempts;
+
+public:
+    GuessTheNumber(){
+        srand(time(0));
+        ComputerGeneratedNumber=rand()%100+1;
+        attempts=0;
+    }
+
+    void startGame(){
+        cout<<"Welcome to Guess the number game!"<<endl<<endl;
+        cout<<" I guess a number between 1-100. Please try to guess the number!"<<endl<<endl;
+
+        do{
+            cout<<"Guess the number:"<<endl;
+            cin>>userGuessedNumber;
+            attempts++;
+
+            if(userGuessedNumber > ComputerGeneratedNumber){
+                cout<<"Guessed number is greater than computer generated number"<<endl;
+            } else if(userGuessedNumber < ComputerGeneratedNumber){
+                cout<<"Guessed number is smaller than computer generated number"<<endl;
+            } else{
+                cout<<"Congratulations! You won the game in "<<attempts<<" attempts"<<endl;
+            }
+
+            cout << "Attempts: " << attempts << endl;
+        } while(userGuessedNumber != ComputerGeneratedNumber);
+    }
+};
+
+int main(){
+    cout<<"Jasleen Kaur 2310997125"<<endl;
+    
+    GuessTheNumber game;
+    game.startGame();
+    return 0;
+}
