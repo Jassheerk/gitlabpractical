@@ -40,7 +40,7 @@ public:
 };
 
 int main(){
-    cout<<"Jasleen Kaur 2310997125"<<endl;
+    cout<<"Jassheer Kaur 2310997128"<<endl;
     
     GuessTheNumber game;
     game.startGame();
