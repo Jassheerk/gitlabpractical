@@ -1,0 +1,227 @@
+#include<iostream>
+using namespace std;
+
+class computation {
+
+private:
+int a,b;
+
+public:
+
+  int compute(int a, int b){
+    return a + b;
+  }
+
+  float compute(int a, float b){
+    return a + b;
+  }
+
+  double compute(int a, double b){
+    return a + b;
+  }
+
+  int compute(char a , char b){
+        return a + b;
+  }
+
+  int compute(char a, int b){
+    return a + b;
+  }
+    int compute(){
+      return 0;
+    }
+
+};
+
+
+int main(){
+    computation obj;
+      cout<<"Jassheer kaur 7128"<<endl;
+
+   cout<< "value of two integer parameters is:" <<obj.compute(2,3)<<endl<<endl;
+
+   cout<< "value of one integer and one float parameter is:" <<obj.compute(2,3.4f)<<endl<<endl;
+
+   cout<< "value of one integer and one double parameter:" <<obj.compute(5,1.3254)<<endl<<endl;
+
+   cout<< "value of character parameters (ascii value addition):" <<obj.compute('2','3')<<endl<<endl;
+
+   cout<< "value of one character parameters and one integer parameter:" <<obj.compute('5',6)<<endl<<endl;
+
+  cout<< "Result of default compute function :" <<obj.compute();
+
+return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+
+class computation {
+
+private:
+int a,b;
+
+public:
+
+  int compute(int a, int b){
+    return a + b;
+  }
+
+  float compute(int a, float b){
+    return a + b;
+  }
+
+  double compute(int a, double b){
+    return a + b;
+  }
+
+  int compute(char a , char b){
+        return a + b;
+  }
+
+  int compute(char a, int b){
+    return a + b;
+  }
+    int compute(){
+      return 0;
+    }
+
+};
+
+
+int main(){
+    computation obj;
+      cout<<"Jassheer kaur 7128"<<endl;
+
+   cout<< "value of two integer parameters is:" <<obj.compute(2,3)<<endl<<endl;
+
+   cout<< "value of one integer and one float parameter is:" <<obj.compute(2,3.4f)<<endl<<endl;
+
+   cout<< "value of one integer and one double parameter:" <<obj.compute(5,1.3254)<<endl<<endl;
+
+   cout<< "value of character parameters (ascii value addition):" <<obj.compute('2','3')<<endl<<endl;
+
+   cout<< "value of one character parameters and one integer parameter:" <<obj.compute('5',6)<<endl<<endl;
+
+  cout<< "Result of default compute function :" <<obj.compute();
+
+return 0;
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+
+class computation {
+
+private:
+int a,b;
+
+public:
+
+  int compute(int a, int b){
+    return a + b;
+  }
+
+  float compute(int a, float b){
+    return a + b;
+  }
+
+  double compute(int a, double b){
+    return a + b;
+  }
+
+  int compute(char a , char b){
+        return a + b;
+  }
+
+  int compute(char a, int b){
+    return a + b;
+  }
+    int compute(){
+      return 0;
+    }
+
+};
+
+
+int main(){
+    computation obj;
+      cout<<"Jassheer kaur 7128"<<endl;
+
+   cout<< "value of two integer parameters is:" <<obj.compute(2,3)<<endl<<endl;
+
+   cout<< "value of one integer and one float parameter is:" <<obj.compute(2,3.4f)<<endl<<endl;
+
+   cout<< "value of one integer and one double parameter:" <<obj.compute(5,1.3254)<<endl<<endl;
+
+   cout<< "value of character parameters (ascii value addition):" <<obj.compute('2','3')<<endl<<endl;
+
+   cout<< "value of one character parameters and one integer parameter:" <<obj.compute('5',6)<<endl<<endl;
+
+  cout<< "Result of default compute function :" <<obj.compute();
+
+return 0;
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+
+class computation {
+
+private:
+int a,b;
+
+public:
+
+  int compute(int a, int b){
+    return a + b;
+  }
+
+  float compute(int a, float b){
+    return a + b;
+  }
+
+  double compute(int a, double b){
+    return a + b;
+  }
+
+  int compute(char a , char b){
+        return a + b;
+  }
+
+  int compute(char a, int b){
+    return a + b;
+  }
+    int compute(){
+      return 0;
+    }
+
+};
+
+
+int main(){
+    computation obj;
+      cout<<"Jassheer kaur 7128"<<endl;
+
+   cout<< "value of two integer parameters is:" <<obj.compute(2,3)<<endl<<endl;
+
+   cout<< "value of one integer and one float parameter is:" <<obj.compute(2,3.4f)<<endl<<endl;
+
+   cout<< "value of one integer and one double parameter:" <<obj.compute(5,1.3254)<<endl<<endl;
+
+   cout<< "value of character parameters (ascii value addition):" <<obj.compute('2','3')<<endl<<endl;
+
+   cout<< "value of one character parameters and one integer parameter:" <<obj.compute('5',6)<<endl<<endl;
+
+  cout<< "Result of default compute function :" <<obj.compute();
+
+return 0;
+}
