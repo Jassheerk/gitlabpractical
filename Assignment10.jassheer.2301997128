@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+struct Book {
+    string isbn;
+    string title;
+    string author;
+    int year;
+};
+
+
+void searchBook(const Book library[], int size, const string& isbn) {
+    for (int i = 0; i < size; ++i) {
+        if (library[i].isbn == isbn) {
+            cout << "Book Found:" << endl;
+            cout << "Title: " << library[i].title << endl;
+            cout << "Author: " << library[i].author << endl;
+            cout << "Year: " << library[i].year << endl;
+            return;
+        }
+    }
+    cout << "Book Not Available in Library." << endl;
+}
+
+int main() {
+   
+    const int maxSize = 3;
+    Book library[maxSize] = {
+        {"978-039759821", "The Great Gatsby" , F. Scott Fitzgerald , 1925},
+        {"978-487852199", "1984", "George Orwell", 1949},
+        {"978-047862048", "War and Peace" , Leo Tolstoy , 1869}
+        
+    };
+
+    
+    string inputISBN;
+    cout << "Enter ISBN: ";
+    cin >> inputISBN;
+
+    
+    searchBook(library, maxSize, inputISBN);
+
+    return 0;
+}
