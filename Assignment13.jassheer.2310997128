@@ -1,0 +1,53 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Item {
+protected:
+    string name;
+    double price;
+
+public:
+    Item(string name, double price) : name(name), price(price) {}
+
+    string getName() const {
+        return name;
+    }
+
+    double getPrice() const {
+        return price;
+    }
+};
+
+class MenuItem : public Item {
+public:
+    MenuItem(string name, double price) : Item(name, price) {}
+};
+
+class Order {
+private:
+    MenuItem menuItem;
+    int quantity;
+
+public:
+    Order(MenuItem menuItem, int quantity) : menuItem(menuItem), quantity(quantity) {}
+
+    double getTotalPrice() const {
+        return menuItem.getPrice() * quantity;
+    }
+};
+
+int main() {
+    MenuItem burger("Burger", 4);
+    MenuItem pizza("Pizza", 6);
+
+    Order order1(burger, 2);
+    Order order2(pizza, 1);
+
+    double totalBill = order1.getTotalPrice() + order2.getTotalPrice();
+
+    cout << "Total bill: $" << totalBill << endl;
+
+    return 0;
+}
