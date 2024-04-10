@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+class largerUnit; 
+
+class smallUnit {
+private:
+    double inches;
+
+public:
+    smallUnit(double inches) : inches(inches) {}
+
+    operator largerUnit();
+
+    double getInches() const {
+        return inches;
+    }
+};
+
+class largerUnit {
+private:
+    double feet;
+
+public:
+    largerUnit(double feet) : feet(feet) {}
+
+    void display() const {
+        cout << "Measurement in feet: " << feet << endl;
+    }
+
+    double getFeet() const {
+        return feet;
+    }
+
+    operator smallUnit() const {
+        return smallUnit(feet * 12.0); 
+    }
+};
+
+smallUnit::operator largerUnit() {
+    return largerUnit(inches / 12.0); 
+}
+
+int main() {
+    smallUnit smallObj(24.0);
+
+    largerUnit largeObj = smallObj;
+
+    largeObj.display();
+
+    cout << "Measurement in inches: " << smallObj.getInches() << endl;
+
+    return 0;
+}
